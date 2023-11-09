@@ -1,0 +1,54 @@
+#Id-button
+{
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  font-style: italic;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  color: rebeccapurple;
+  background-color: aqua;
+}
+
+.Class-button
+{
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  font-style: italic;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  color: rebeccapurple;
+  background-color: aquamarine;
+  
+}
+
+.Add
+{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(120, 246, 120);
+  border: none;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 18px;
+  padding-bottom: 5px;
+}
+
+
+.Wishlist
+{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 5px;
+}

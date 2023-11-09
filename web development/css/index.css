@@ -1,0 +1,35 @@
+
+.welcome 
+{
+    background-color: cyan;
+    color: orangered;
+    font-size: 34px;
+    background-image: url("https://www.uhdpaper.com/2023/04/cat-beautiful-digital-art-4k-7780i.html?m=1");
+   
+}
+
+.new
+{   
+    padding-left: 550px;
+    width: 450px;
+}
+
+.xyz
+{
+  color: coral;
+  padding-left: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+*{
+  color: black;
+ 
+}
+.mar{
+  margin-left: 90px;
+}
+.emo{
+  padding-left: 550px;
+    width: 450px;
+}
