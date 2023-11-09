@@ -224,3 +224,106 @@
                  typeof (11 == 11) = 'boolean'
 
 */
+
+/*<!-- variables -->
+
+  
+    1 - What are variables
+    2 - Syntax Rules
+    3 - updating values
+    4 - myntra Bag Exercise
+    5 - Naming conventions 
+    6 - Ways to create variables
+    
+    1 - variables are used to store data 
+    2 - syntax =
+            strings =  let welcomeMessage = 'hello friends'
+
+            numbers =  let  noOfStudents = 5;
+    3 - updating values 
+          
+
+  
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables</title>
+  </head>
+  <body>
+    <script>
+     
+     let welcomeMessage = 'hello friends'
+      console.log(welcomeMessage)
+ 
+     let a = 5;
+     let b = 10;
+     console.log(a+b)
+
+
+     let bagPrice = (15599 - (10/100*15599 )) - 272;
+     let  jeansPrice =  (2499 - (41 / 100 *2499)) - 29;
+     let bagValue = Math.round((jeansPrice + bagPrice  + 25 + 20 )* 118 /100);
+     let bagSummery =`your final  Myntra bag amount is : ₹ ${bagValue}`;
+     console.log(bagSummery)
+      
+    
+     let noOfStudents = 5;
+     noOfStudents = noOfStudents +1;
+     console.log(noOfStudents)
+     
+     let money = 1;
+
+      money += 5; // money = 6
+      money -= 2; // money = 4
+      money *= 3; // money = 12
+      money /= 4; // money = 3
+      money++;    // money = 4
+    
+      let a = 5;
+      let b = 6;
+      let c = a + 4;
+      console.log(c)
+      c = b + 2;
+      console.log(c)
+
+    let i = 5;
+    console.log(i)
+
+    i = i + 5;
+    console.log(i)
+
+    </script>
+  </body>
+  </html>
+  */
+
+ /*
+ 
+ 5 - Naming conventions
+
+  camelCase 
+     *Start with lowercase letter. Capitalize the first letter of each subsequent word.
+     *Example : myVariableName
+  
+  snake_case
+      *start with lower case letter. Separate words with underscore.
+      *Example : my_variable_name .
+
+  kebab-case
+      *All lower case letters ,separate words with hyphens . used for html and css .
+      *Example : my-variable-name
+
+
+ 6 - Ways to create variables
+    
+  1 - const 
+      use to constant values we can not change these values
+
+  2 - let 
+      
+  3 - var
+     
+ */
