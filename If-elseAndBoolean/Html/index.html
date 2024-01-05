@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boolean</title>
+</head>
+<body>
+  
+
+  <script>
+/*
+    console.log("checking if you can drive");
+    let age = 21;
+    if(age  > 18 )
+    {
+    console.log("you can drive");
+    }
+    else
+    {
+      console.log("you can not drive")
+    }
+   
+
+    //logical operator 
+
+    let a = 45;
+    if (a > 19 && a < 65) {
+        console.log('you can drive ');
+    }
+    else
+    {
+      console.log('use a bicycle');
+    }
+    */
+
+    // scope //
+ /*   
+ 
+ // show error in console userMessage not define
+ let age = 34;
+    if (age > 18) {
+      let userMessage = 'you can drive';
+     
+    }
+    else
+    {
+      let userMessage = 'use a bicycle';
+      
+    }
+    console.log(userMessage)
+
+    ********** var is not follow scope
+*/
+/*
+we can not use inside scope outside
+let age = 34;
+    if (age > 18) {
+      let userMessage = 'you can drive';// <------ inside scope = also known as block scope
+      console.log(userMessage)
+    }
+    else
+    {
+      let userMessage = 'use a bicycle';
+      console.log(userMessage)
+    }
+    */
+   //we can use outside scope inside and outside both
+
+   // outside scop
+
+   /*
+    let age = 14;
+    let userMessage; // <------ scope = also known as global scope 
+     if (age > 18) {
+       userMessage = 'you can drive';
+      console.log(userMessage)
+    }
+    else
+    {
+       userMessage = 'use a bicycle';
+      console.log(userMessage)
+    }
+    console.log(userMessage)
+
+    */
+
+   //truthy and falsy values 
+    
+   //**** falsy value
+
+   /*
+   let age = null; //<<----null
+   console.log(age);
+   if(age)
+   {
+     console.log("you have a valid age ");
+   }
+   else
+   {
+    console.log("you are not human");
+   }
+
+    
+   let ag = "";<----(empty string)
+   console.log(age);
+   if(age)
+   {
+     console.log("you have a valid age ");
+   }
+   else
+   {
+    console.log("you are not human");
+   }
+    
+   let ae ;<---false
+   console.log(age);
+   if(age)
+   {
+     console.log("you have a valid age ");
+   }
+   else
+   {
+    console.log("you are not human");
+   }
+
+    
+   let a = 0;<--- zero is false 
+   console.log(age);
+   if(age)
+   {
+     console.log("you have a valid age ");
+   }
+   else
+   {
+    console.log("you are not human");
+   }
+   
+   
+   
+   let num = 1/"ice cream";<<---NAN not a number 
+   console.log(age);
+   if(age)
+   {
+     console.log("you have a valid age ");
+   }
+   else
+   {
+    console.log("you are not human");
+   }
+
+*/
+
+//if alternates 
+
+//1. ternary Operator = condition ? trueValue : falseValue
+            //Quick one -line if-else.
+//This is old type 
+
+    /* let age = 31;
+    let result;
+ 
+   if (age > 18)
+     {
+      result = 'adult';
+
+    }
+   
+    else
+    {
+      result = 'child';
+    }
+    console.log(result);
+*/
+//ternary new type
+/*
+let age = 60;
+
+let result = age >19 ? 'adult':'kid';
+
+console.log(result);
+ */
+
+ 
+// 2 Guard operator : value || defaultValue 
+     // use when a fallback value is needed.
+     
+  /*   let age = 32;
+     let finalAge = age || 18;
+
+     console.log(age);
+     console.log(finalAge);
+ */
+
+ // 3 Default operator : 
+     // use when you want to consider only null am=nd undefined values as falsy 
+
+ /*let age = 32;
+     let finalAge = age ?? 18;
+
+     console.log(age);
+     console.log(finalAge);
+*/
+
+// 4. simplifies : conditional logic 
+// 5. use : Wisely to maintain readability.
+  </script>
+</body>
+</html>

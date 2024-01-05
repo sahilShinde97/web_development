@@ -327,3 +327,36 @@
   3 - var
      
  */
+
+  /* if-else and Booleans
+  
+  1 - What are Booleans 
+
+  ---->  basic data types in js 
+         two values - true or false 
+         true is a String not a Boolean
+
+  2 - comparison operators
+
+----> 
+
+3 - if-else
+ 
+--->
+
+4 logical operators 
+
+--->
+
+5 scope 
+
+---->
+
+6 truthy and falsy Values 
+
+--->
+
+7 if alternates
+
+--->
+  */

@@ -5,15 +5,15 @@
   <title>CALCULATOR</title>
 </head>
 <body>
-  
-  
+  <div id="color">
   <div id="calculator">
 
     <div>
-      <button class="Calc">Calculator</button>
-      <button class="convert">Converter</button>
+      <button class="Calc" onclick="alert('Calculator Mode')">Calculator</button>
+      <button class="convert" onclick="alert('Converter Mode')">Converter</button>
+       <button class="mode"></button>
     </div>
-   
+       
 
     <input type="text" id="display" readonly>
     <div class="button-container">
@@ -52,7 +52,7 @@
       document.querySelector('#display').value=currentDisplay"
       >9</button>
 
-      <button style="color: rgb(5, 188, 139) ;" class="button" onclick="
+      <button style="color: rgb(5, 188, 139);" class="button" onclick="
       currentDisplay = currentDisplay + '*';
       document.querySelector('#display').value=currentDisplay"
       >*</button>
@@ -87,7 +87,7 @@
       document.querySelector('#display').value=currentDisplay" 
       >2</button>
 
-      <button class="button" onclick="
+      <button  class="button" onclick="
       currentDisplay =currentDisplay + '3';
       document.querySelector('#display').value=currentDisplay" 
       >3</button>
@@ -116,8 +116,12 @@
       currentDisplay = eval(currentDisplay);
       document.querySelector('#display').value=currentDisplay"
       >=</button>
+      
 
-    </div>
+     
+
+    </div> 
+  </div>
    <script>
     let currentDisplay = '';
     document.querySelector('#display').value = currentDisplay;
