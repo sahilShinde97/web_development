@@ -1,49 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="/JSON/cricket.css">
   <title>cricket Game</title>
-
-  <style>
-    body{
-      text-align: center;
-    }
-  </style>
 </head>
 <body>
 
   <h1>Bat Ball And Stump Game</h1>
 
-  <button onclick=" 
+  <button class="Choice-button" onclick=" 
   let  computerChoice = generateComputerChoice();
   let resultMsg = getResult('Bat',computerChoice)
   showResult('Bat',computerChoice,resultMsg); 
-  "> Bat</button>
+  "> 
+       <img src="/JSON/images/bat.png" alt="Bat Image "class="Choice-Image" >
+  </button>
 
-  <button onclick=" 
+  <button class="Choice-button" onclick=" 
   computerChoice = generateComputerChoice();
   resultMsg = getResult('Ball',computerChoice)
   showResult('Ball',computerChoice,resultMsg);
-  "> Ball</button>
+  ">
+        <img src="/JSON/images/ball.png" alt="Ball Image" class="Choice-Image"> 
+   </button>
 
-  <button onclick="
+  <button class="Choice-button" onclick="
   computerChoice = generateComputerChoice() 
   resultMsg = getResult('Stump',computerChoice)
   showResult('Stump',computerChoice,resultMsg);
-  "> Stump</button>
+  ">
+         <img src="/JSON/images/stump.png" alt="Stump Image" class="Choice-Image"> 
+   </button>
+
+ 
+  
+   <h3 id="User-move"></h3>  
+   <h3 id="Computer-move"></h3>
+   <h3 id="Result"></h3>
+   <h3 id="Score"></h3>
+
+
+   <button class="Clear-game" onclick="localStorage.clear()
+   resetScore();
+   ">Reset</button>
 
 <script>
-
-  let score = {
-    win : 0,
+  let score;
+  let scoreStr = localStorage.getItem('store');
+  resetScore(scoreStr);
+  function resetScore(scoreStr){
+   score = scoreStr ? JSON.parse(scoreStr) : { win : 0,
     lost : 0,
     tie : 0,
-    displayScore : function(){
-     return `No of matches Won: ${score.win},    Lost: ${score.lost},   Tie: ${score.tie}`;
-    }
   };
 
+  score.displayScore = function(){
+    return `Score:Won: ${score.win},    Lost: ${score.lost},   Tie: ${score.tie}`;
+   };
+   showResult();
+  }
   function generateComputerChoice(){
     //this will generate the random number between 0 to 3
     let randomNumber = Math.random() * 3;
@@ -96,12 +111,15 @@
   }
   function showResult(userMove,computerMove,result)
   {
-    console.log(score);
-    alert(` You Have Chosen ${userMove} . Computer Choice Is ${computerMove} 
-    
-     ${result}
+    localStorage.setItem('score',JSON.stringify(score));
 
-    ${score.displayScore()}`);
+     document.querySelector('#User-move').innerText = userMove ?` You Have Chosen ${userMove}` : ' ';
+
+     document.querySelector('#Computer-move').innerText = computerMove  ?`Computer Choice Is ${computerMove} `: '';
+
+     document.querySelector('#Result').innerText =  result || '';
+
+     document.querySelector('#Score').innerText =score.displayScore();
   }
   </script>
 </body>

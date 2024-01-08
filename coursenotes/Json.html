@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!--
+    what is JSON ?
+  1 JavaScript Object Notation:NOt the same as js object, but similar.
+     
+  ex. js object : {
+                   firstName : 'sam',
+                   lastName  :'shinde',<< ****need not be enclosed within double quotes
+                  }
+       JSON object : {
+                  " firstName" : "sam",
+                  " lastName" :"shinde" <<****must be enclosed within double quotes
+                  }
+
+
+  2 common is network calls and data storage .
+  3 JSON.stringify() and JSON.parse()
+  4 String are easy to transport over the network
+  5 JSON requires double quotes . Escaped as \".
+  6 JSON is data format ,JS object is a data structure.
+
+  -->
+  <script>
+    /*
+    let product ={
+      name : 't-shirt',
+      price : '786',
+      rating:{
+        stars : 4.5,
+        noOfReviews : 453,
+      };
+    };
+    console.log(typeof(product));
+    console.log(product);
+    let str = JSON.stringify(product);
+    console.log(typeof(str));
+    console.log(str);
+
+    let newProduct = JSON.parse(str);
+    console.log(typeof(product));
+    console.log(newProduct);
+*/
+    //store an object in local storage
+    /*
+    localStorage.setItem(
+      "user",
+      JSON.stringify({
+        name : "sahil shinde",
+        age : 20,
+      })
+    );
+    // retrieve an object in local storage 
+    const User=JSON.parse(
+      localStorage.getItem("user")
+    )
+    */
+    // ****local storage ***
+
+    /* 
+    1. Prsistent data storage in the browser.
+    2. setItem : store data as key-value pairs .
+    3. only strings can be stored.
+    4. getItem : retrieves data based on key.
+    5. Other Method : localStorage.clear() , removeItem().
+    6. do not store sensitive information . viewable in storage console.
+    */
+
+    //localStorage.setItem('name','KG CODING');
+    //localStorage.setItem('price','1116');
+
+   // console.log(localStorage.getItem('Name'));
+   let product ={
+    name : 't-shirt',
+    price : '786',
+    rating:{
+      stars : 4.5,
+      noOfReviews : 453,
+    },
+  };
+    //localStorage.setItem('product' ,JSON.stringify( product));
+   //let product2 = JSON.parse(localStorage.getItem('product'));
+   //console.log(product2);
+
+   localStorage.removeItem('price');
+   localStorage.clear();
+  </script>
+</body>
+</html>

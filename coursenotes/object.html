@@ -8,12 +8,13 @@
 </head>
 <body>
   <script>
-    let product = {
-        
-        company : 'mango',
-        price : 861,
-        item_name: 'T-shirt',
-    };
+    //let product = {
+      //  
+        //company : 'mango',
+        //price : 861,
+        //item_name: 'T-shirt',
+    //};
+
     //console.log(product);
     //console.log(product.company);
     //console.log(product.price);
@@ -21,12 +22,99 @@
     //product.company = 'banana';
     //console.log(product);
 
-    console.log(product['company']);
-    console.log(product['price']);
-    console.log(product['item_name']);//its use to access strings and dash variables  ex.. 'item-name'
+   // console.log(product['company']);
+   // console.log(product['price']);
+   // console.log(product['item_name']);//its use to access strings and dash variables  ex.. 'item-name'
 
-    delete product.company;
-    console.log(product);
+   // delete product.company;
+   // console.log(product);
+
+   /*let product = {
+        
+    company : 'mango',
+    price : 861,
+    item_name: 'T-shirt',
+
+    displayPrice: function(){
+      console.log(`price of the product is ${this.price}`);
+    }
+};
+  product.displayPrice();
+  */
+ /*
+  console.log('this is kg coding'.toUpperCase());
+  console.log('this is kg coding'.replace('KG','Knowledge Gate'));
+  */
+
+ /* let a = 5;
+  let b = a;
+  console.log(`a=${a} ,b=${b}`);
+
+  a = 8;
+  console.log(`a=${a} ,b=${b}`);
+
+
+  let x ={number : 5};
+  let y = x;
+  console.log(`x=${x.number},y=${y.number}`);
+  x.number = 8;
+  console.log(`x=${x.number},y=${y.number}`);
+
+
+  let p = {pop : 'iujh'};
+  let q = {pop : 'iujh'};
+  console.log(p == q);
+  */
+
+  // Dw-structuring : extract properties from object easily
+ /* let product = {
+        
+    company : 'mango',
+    price : 861,
+    item_name: 'T-shirt',
+
+  };
+  let {company,price}= product;
+  console.log(company);
+  console.log(price);
+*/
+
+// short hand property 
+/*
+let price= 861;
+let product = {
+        
+  company : 'mango',
+  item_name: 'T-shirt',
+  price : price,
+
+};
+//is same as
+let product1 = {
+        
+  company : 'mango',
+  item_name: 'T-shirt',
+  price 
+};
+*/
+
+// method shorthand
+
+let product = {
+  company : 'mango',
+  itemName : 'cotton striped t -shirt',
+  displayPrice: function(){
+    return  `$${this.price.toFixed(2)}`;
+  }
+};
+// is same as
+let product1 = {
+  company : 'mango',
+  itemName : 'cotton striped t -shirt',
+  displayPrice(){
+    return  `$${this.price.toFixed(2)}`;
+  }
+}
   </script>
 </body>
 </html>
