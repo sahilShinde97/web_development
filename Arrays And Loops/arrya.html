@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+    /*
+    What is an array
+
+    1. an array is just a list of values
+    2. index:starts with 0.
+    3. arrays are used for storing multiple values in a single values.
+
+    syntax : let myArray = [1 ,'KG Coding' , null,true,{likes:'1 Million'}];
+
+    1. use [] to create a new array, [] brackets enclose list of values
+    2. Array can be saved to a variable
+    3. Accessing Values :Use [] with index 
+    4. Syntax Rules :
+       *Brackets starts and end the array
+       *Values separated by commas 
+       *Can span multiple line
+    5. Arrays can hold any value, including arrays
+    6. typeof operator on array returns object
+       ex.. let student = [1 , 2, 3, 4, 5];
+            console.log(typeof(student));
+
+    */ 
+
+    //let numbers=[1,2,3,4,5,6,7,2]
+    //console.log(numbers);
+    //console.log(numbers[6]);
+
+    //let second = [1,true,null, 'number'];
+    //console.log(second[3]);
+           
+    /*
+      1. Array.is array() check if a variable is an array .
+      2. Length property holds the size of the array 
+      3. Common methods
+           * push / pop : add and remove to end 
+           *shift/unshift: add or remove from front
+           *splice: add or remove from front
+           *toString : Convert to string
+           *sort : Sort element
+           *valueOf:get array itself
+      4. Arrays also use reference like object
+      5. De-structuring also works for Arrays
+    */
+   // let obj = {
+    //  lkf : 89,
+    //}
+    //let numbers=[1,2,3,4,5,6,7,2]
+    //console.log(numbers);
+    //console.log(numbers[6]);
+
+    //let second = [1,true,null, 'number'];
+    //console.log(second[3]);
+    //console.log(typeof second);
+
+    //console.log(Array.isArray(second));
+    //console.log(Array.isArray(obj));
+
+    //let numbers=[1,2,3,4,5,6,7,2]
+    //console.log(numbers);
+   // console.log(numbers.length);
+
+   // **** push and pop ****
+
+  /* let arr = [1,2,3];
+   console.log(arr);
+   arr.push(6);
+   console.log(arr);
+   console.log('popped' + arr.pop());
+   console.log(arr);
+   console.log(arr);
+   console.log('popped' + arr.pop());
+   console.log(arr);
+  */
+
+  // *** shift and unshift
+/*
+  let arr = [10,20,30,40,50];
+  console.log(arr)
+  arr.shift();
+  console.log(arr)
+  arr.unshift(10)
+  console.log(arr)
+ */
+ // splice
+ 
+ //let arr = [3,7,5,6,7,8,0];
+
+ //console.log(arr);
+ //arr.splice(0,3);
+ //console.log(arr)
+    
+ //toString
+
+ //let arr = [3,7,5,6,7,8,0];
+ //console.log(arr.toString());
+
+ // sort
+/*
+  let arr = [9,4,5,3,5,7,6];
+  console.log(arr);
+  arr.sort();
+  console.log (arr);
+*/
+
+ // value of
+ /* 
+ let arr = [9,4,5,3,5,7,6];
+  console.log(arr);
+  arr.valueOf();
+  console.log(arr);
+ */
+
+ //new  reference to a same object
+ /* 
+ let arr = [9,4,5,3,5,7,6];
+  console.log(arr);
+
+  let arr2 = arr;
+  console.log(arr);
+  arr2[0]=99;
+  console.log(arr);
+ */
+ // D-structuring
+   
+ let arr = [9,8,5,7,6];
+  console.log(arr);
+
+  let arr2 = arr;
+  console.log(arr);
+  arr2[0]=99;
+  console.log(arr);
+
+  let[a,b,c,d]=arr;
+  console.log(a + "" + b + " "+ c + " " + d );
+  
+
+  </script>
+  
+</body>
+</html>
