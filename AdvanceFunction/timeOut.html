@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // set timeout and set interval
+
+    /*
+     1. Function for executing code asynchronously after a delay
+     2. setTimeout runs once ; setInterval runs repeatedly
+     3. setTimeout : 
+         * syntax : setTimeout(function,time)
+            ex...
+             let alarm = () =>{
+                console.log(`week up it's time to go running...`);
+                  };
+                  setTimeout(alarm ,5000 );
+                  console.log('timer set');
+
+         * Cancel : clearTimeout(timeID) 
+            ex..
+             let alarm = () =>{
+                console.log(`week up it's time to go running...`);
+                  };
+               let timerID = setTimeout(alarm ,10000 );
+                  console.log(`timer set with timer id ${timerID}`);
+                  clearTimeout(timerID);
+
+     4. setInterval :
+        * Syntax : setInterval(function,time)
+                 ex..
+                 let alarm = () =>{
+                console.log(`week up it's time to go running...: ${new Date()}`);};  let intervalID =  setInterval(alarm,1000);
+        * Cancel : clearInterval(intervalID)
+                 ex..
+                  let alarm = () =>{
+                console.log(`week up it's time to go running...: ${new Date()}`);};
+                let intervalID =  setInterval(alarm,1000);
+                 setTimeout(() => clearInterval(intervalID),5000);
+    */
+   
+             
+                  
+  </script>
+</body>
+</html>

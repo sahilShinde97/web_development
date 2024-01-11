@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <button id="my-btn" >
+   click me
+  </button>
+
+  <script>
+
+    let buttonElement = document.querySelector
+    ("#my-btn")
+    let behaviour = addEventListener = event => console.log
+    ('i am clicked');
+    buttonElement.addEventListener('click',behaviour);
+
+
+      let printDate = event =>console.log(new Date());
+      buttonElement.addEventListener('click',printDate);
+
+      buttonElement.removeEventListener('click',behaviour)
+    
+   /*
+     1. What is an Event: Occurrences like click,mouse ,movement,keyboard input(eg.,birthday,functions).
+     2. Using querySelector to attach listeners.
+     3. Multiple Listeners: You can add more than one.
+     4. removeEventListener('event',functionVariable);
+   */  
+  </script>
+  
+</body>
+</html>

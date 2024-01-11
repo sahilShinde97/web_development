@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Document</title>
+</head>
+<body>
+
+   <script>
+    
+    let arr = [ 1,2,3,4,5,6,7,8,9];
+arr.forEach(num => {
+  if(num === 5) {
+    return;
+  }
+  console.log(`visited : ${num}`)});
+     
+
+     function search(arr,num)
+     {
+      for(let i = 0; i < arr.length; i++)
+      {
+         if(arr[i]=== num)
+         {
+           console.log(`element found at index : ${i}`);
+           return;
+         }
+      }
+      console.log('element was not found');
+     }
+    // search(arr,3) 
+   
+
+    /*
+    1. A method for array iteration, often preferred for readability
+    2. Parameters : one for item, optional second for index.
+    3. Using return is similar to continue in traditional loops.
+    4. Not straightforward to break out of each loop.
+    5. When you need to perform an action on each array element and don't need to break early
+    */ 
+   </script>
+</body>
+</html>
